@@ -14,7 +14,7 @@ let result
         result = 'fizzbuzz'
         console.log(result)
         square.innerHTML = result
-
+        square.classList.add('bg-red')
     }
 
     else if (number % 3 === 0)
@@ -22,6 +22,7 @@ let result
         result = 'fizz'
         console.log(result)
         square.innerHTML = result
+        square.classList.add('bg-green')
     }
 
 
@@ -30,12 +31,14 @@ let result
         result = 'buzz'
         console.log(result)
         square.innerHTML = result
+        square.classList.add('bg-yellow')
     }
    
     else  {
         result = number
         console.log(result);
         square.innerHTML = number
+        square.classList.add('bg-softblue')
 
     }
      

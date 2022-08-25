@@ -17,3 +17,19 @@
     background-color: red;
     border: 1px solid black;
 }
+
+.bg-softblue {
+    background-color: #1389b2;
+}
+
+.bg-green {
+    background-color: #0cd6a1;
+}
+
+.bg-yellow {
+    background-color: #ffd166;
+}
+
+.bg-red {
+    background-color: #f0466f;
+}
