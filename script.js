@@ -1,26 +1,39 @@
 console.log('js ok');
 
-for(let number = 1; number <= 100; number++) 
-    // Imposto la condizione per cui il numero è divisibile
-    if(!isNaN(number)) {
-        const nonDivisibile = number % 3 !== 0 && number % 5 != 0;
-        const divisibilePerTre = number % 3 === 0 && number % 5 != 0;
-        const divisibilePerCinque = number % 5 === 0 && number % 3 != 0;
-        const divisibilePerTreePerCinque = number % 3 === 0 && number % 5 === 0;
+const container = document.getElementById('container')
 
-        if(divisibilePerTre) {
-            console.log(number + 'fizz')
-        }
+for(let number = 1; number <= 100; number++) {
 
-        if(divisibilePerCinque) {
-            console.log(number + 'buzz')
-        }
+const square = document.createElement('div')   
+square.classList.add('box')
+container.append(square)
+let result
 
-        if(divisibilePerTreePerCinque) {
-            console.log(number + 'fizzbuzz')
-        }
-
-        if(nonDivisibile) {
-            console.log(number)
-        }  
+    if (number % 3 === 0)
+    {    
+    result = 'fizz'
+    console.log(result)
     }
+
+
+    else if (number % 5 === 0) {
+        result = 'buzz'
+        console.log(result)
+    }
+   
+
+    else if (number % 3 === 0 && number % 5 === 0) {
+        result = 'fizzbuzz'
+        console.log(result)
+    }
+
+    else  {
+    result = number
+    console.log(result)
+    }
+     
+
+
+}
+
+

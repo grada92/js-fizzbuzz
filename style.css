@@ -1,0 +1,19 @@
+/* generics */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+}
