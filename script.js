@@ -1,7 +1,8 @@
 console.log('js ok');
 
 for(let number = 1; number <= 100; number++) {
-
+    // Imposto la condizione per cui il numero è divisibile
+    
     if(!isNaN(number)) {
         const divisibilePerDue = number % 3 === 0;
         const divisibilePerTre = number % 5 === 0;
